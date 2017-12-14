@@ -1,5 +1,6 @@
 import logging
 import os
+from logging.handlers import RotatingFileHandler
 
 """
 :params - script_name/module_name, loglevel
@@ -11,11 +12,12 @@ Task log_creation module will perform-
 2. find the base_dir path where log directory exist
 3. check if log dir is not present then create it
 4. define formatter using logging module
-5. create logfile under log directory
-6. append the log data into newly created logfile
-7. add formatter to logfile
-8. set log level
-9. finally addHandler to logfile
+5. get log messages using getLogger function
+6. create logfile under log directory
+7. append the log data into newly created logfile
+8. add formatter to logfile
+9. set log level
+10. finally addHandler to logfile
 """
 
 class logMessage:
@@ -32,4 +34,20 @@ class logMessage:
         if not os.path.exists(BASE_DIR):
             os.makedirs(BASE_DIR)
 
+        #import pdb; pdb.set_trace()
+
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        log = logging.getLogger(logger)
+        loglocation = BASE_DIR+"/logs/"+logfilename
+        filehandler = logging.FileHandler(loglocation, mode='a')
+        filehandler.setFormatter(formatter)
+
+        log.setLevel(level)
+        log.addHandler(filehandler)
+
+def apploggerValidation():
+    return True
+
+
+
+
