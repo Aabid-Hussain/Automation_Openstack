@@ -18,3 +18,18 @@ Task log_creation module will perform-
 9. finally addHandler to logfile
 """
 
+class logMessage:
+
+    def __init__(self, module_name, loglevel=logging.INFO):
+        self.log_creation(module_name + '.log', loglevel, module_name)
+        self.log = logging.getLogger(module_name)
+
+    def log_creation(self, logfilename, level, logger):
+
+        PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+        BASE_DIR = os.path.dirname(PROJECT_PATH)
+
+        if not os.path.exists(BASE_DIR):
+            os.makedirs(BASE_DIR)
+
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
