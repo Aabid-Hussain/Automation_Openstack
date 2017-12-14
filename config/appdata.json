@@ -1,0 +1,20 @@
+{
+  "application_data":{
+    "devdata":{
+      "ip": "192.168.195.182",
+      "devUser": "stack",
+      "devUserPwd": "tellabs$123",
+      "file_name": "local.conf",
+      "file_data": "[[local|localrc]]\n\rRECLONE=True\n\rHOST_IP=192.168.195.182\n\rSERVICE_TOKEN=mytoken123\n\rADMIN_PASSWORD=openstack123\n\rMYSQL_PASSWORD=mysql123\n\rRABBIT_PASSWORD=rabbit123\n\rSERVICE_PASSWORD=$ADMIN_PASSWORD\n\rLOGFILE=$DEST/logs/stack.sh.log\n\rLOGDAYS=2\n\renable_plugin neutron-lbaas https://github.com/openstack/neutron-lbaas.git stable/ocata\n\rdisable_service n-net c-api c-sch c-vol\n\renable_service q-svc q-agt q-dhcp q-l3 q-meta q-lbaasv2"
+    },
+    "userdata":{
+      "enable": "True",
+      "ip": "192.168.195.182",
+      "username": "tellabs",
+      "password": "tellabs$123"
+
+    }
+  }
+}
+
+
