@@ -20,34 +20,39 @@ Task log_creation module will perform-
 10. finally addHandler to logfile
 """
 
-class logMessage:
+class LogMessage:
 
     def __init__(self, module_name, loglevel=logging.INFO):
-        self.log_creation(module_name + '.log', loglevel, module_name)
         self.log = logging.getLogger(module_name)
+        self.LogCreation(module_name+".log", loglevel, module_name)
 
-    def log_creation(self, logfilename, level, logger):
+
+    def LogCreation(self, logfilename, level, logger):
 
         PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+
         BASE_DIR = os.path.dirname(PROJECT_PATH)
 
         if not os.path.exists(BASE_DIR):
             os.makedirs(BASE_DIR)
 
-        #import pdb; pdb.set_trace()
-
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
         log = logging.getLogger(logger)
-        loglocation = BASE_DIR+"/logs/"+logfilename
-        filehandler = logging.FileHandler(loglocation, mode='a')
-        filehandler.setFormatter(formatter)
+
+        log_location = BASE_DIR+"/logs/"+logfilename
+
+        formatter = logging.Formatter('%(asctime)s %(levelname)s - %(message)s\r\n')
+
+        # fileRotation = RotatingFileHandler(filename=log_location, mode='a', encoding='utf-8', maxBytes=1024, backupCount=10)
+        # fileRotation.setFormatter(formatter)
+
+        file_handler = logging.FileHandler(filename=log_location, mode='a', encoding='utf-8')
+        file_handler.setFormatter(formatter)
 
         log.setLevel(level)
-        log.addHandler(filehandler)
+        log.addHandler(file_handler)
+        # log.addHandler(fileRotation)
+
 
 def apploggerValidation():
     return True
-
-
-
 

@@ -1,6 +1,6 @@
 import json
 import logging
-from applogger import logMessage
+from AppLogger import logMessage
 
 
 log_capture = logMessage("readJsonFile", loglevel=logging.DEBUG)
