@@ -29,8 +29,8 @@
       <file leaf-file-name="SshAutomation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SshAutomation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="984">
+              <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -170,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ReadJsonFile">
+  <component name="RunManager" selected="Python.SshAutomation">
     <configuration name="ReadJsonFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,6 +184,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Automation_Openstack" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScriptsDir/ReadJsonFile.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="SshAutomation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScriptsDir" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Automation_Openstack" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScriptsDir/SshAutomation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -225,16 +243,18 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.readJsonFile" />
       <item index="1" class="java.lang.String" itemvalue="Python.applogger" />
       <item index="2" class="java.lang.String" itemvalue="Python.ReadJsonFile" />
+      <item index="3" class="java.lang.String" itemvalue="Python.SshAutomation" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.ReadJsonFile" />
-        <item index="1" class="java.lang.String" itemvalue="Python.applogger" />
-        <item index="2" class="java.lang.String" itemvalue="Python.readJsonFile" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.SshAutomation" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ReadJsonFile" />
+        <item index="2" class="java.lang.String" itemvalue="Python.applogger" />
+        <item index="3" class="java.lang.String" itemvalue="Python.readJsonFile" />
       </list>
     </recent_temporary>
   </component>
@@ -478,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SshAutomation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="984">
+          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
