@@ -3,7 +3,7 @@ import logging
 from AppLogger import LogMessage
 
 
-log_capture = LogMessage("readJsonFile", loglevel=logging.DEBUG)
+log_capture = LogMessage("ReadJsonFile", loglevel=logging.DEBUG)
 def ReadJsonFile():
 
     with open('/home/vignesh/Automation_Openstack/ConfigDir/AppData.json', 'r') as jsonFile:
@@ -17,4 +17,4 @@ def jsonValidation():
 
 
 if __name__ == '__main__':
-    readJsonFile()
+    ReadJsonFile()

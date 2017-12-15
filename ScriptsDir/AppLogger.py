@@ -38,7 +38,7 @@ class LogMessage:
 
         log = logging.getLogger(logger)
 
-        log_location = BASE_DIR+"/logs/"+logfilename
+        log_location = BASE_DIR+"/LogsDir/"+logfilename
 
         formatter = logging.Formatter('%(asctime)s %(levelname)s - %(message)s\r\n')
 
