@@ -1,12 +1,12 @@
 import json
 import logging
-from AppLogger import logMessage
+from AppLogger import LogMessage
 
 
-log_capture = logMessage("readJsonFile", loglevel=logging.DEBUG)
-def readJsonFile():
+log_capture = LogMessage("readJsonFile", loglevel=logging.DEBUG)
+def ReadJsonFile():
 
-    with open('/home/vignesh/Automation_Openstack/config/appdata.json', 'r') as jsonFile:
+    with open('/home/vignesh/Automation_Openstack/ConfigDir/AppData.json', 'r') as jsonFile:
         data = json.loads(jsonFile.read())
     log_capture.log.debug('json file has been loaded successfully!!!')
 

@@ -1,6 +1,6 @@
 try:
-    from ReadJsonFile import readJsonFile
-    from AppLogger import logMessage
+    from ReadJsonFile import ReadJsonFile
+    from AppLogger import LogMessage
 
 except ImportError:
     pass
