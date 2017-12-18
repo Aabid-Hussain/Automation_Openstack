@@ -1,5 +1,6 @@
-from paramiko import client
+# from paramiko import client
 import time
+import paramiko
 import os
 
 HOST_IP_ADDRESS = "192.168.195.182"
@@ -20,10 +21,24 @@ class SshAutomation:
 
     def __init__(self, ip_add, username, password):
 
-        self.client = client.SSHClient()
-        self.client.set_missing_host_key_policy(client.AutoAddPolicy())
-        self.client.connect(hostname=ip_add, username=username, password=password,
+        self.client = paramiko.SSHClient()
+        self.client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        try:
+            self.client.connect(hostname=ip_add, username=username, password=password,
                             port=22, look_for_keys=False)
+
+        except paramiko.AuthenticationException:
+            print("Authentication Failed")
+            quit()
+
+        except paramiko.SSHException:
+            print("Connection Failed")
+            quit()
+
+        except:
+            print("Unknown Error")
+
+        self.client.load_system_host_keys()
 
 
     def SendCommand(self, cmd):
