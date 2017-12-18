@@ -4,15 +4,6 @@ import os
 
 HOST_IP_ADDRESS = "192.168.195.182"
 
-def ServerPingCheck(ip_add):
-    response = os.system("ping -c 1 " + ip_add)
-    print("\n\r")
-    time.sleep(2)
-    if response == 0:
-        print("ping for {} is successful".format(ip_add))
-        return True
-    else:
-        return False
 
 
 class SshAutomation:
