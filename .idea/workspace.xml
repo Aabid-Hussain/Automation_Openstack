@@ -339,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513584728708</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Working on Ssh concepts with examples">
+      <created>1513660201309</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1513660201309</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -392,7 +399,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="working on SshAutomation script." />
     <MESSAGE value="Added function named rootcmd1 and SendCommand." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added function named rootcmd1 and SendCommand." />
+    <MESSAGE value="Working on Ssh concepts with examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on Ssh concepts with examples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
