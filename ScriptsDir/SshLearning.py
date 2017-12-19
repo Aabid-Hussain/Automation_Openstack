@@ -2,6 +2,7 @@ from paramiko import client
 import os
 import time
 import sys
+from AppLogger import LogMessage
 
 
 HOST_IP = "192.168.195.182"
@@ -36,6 +37,7 @@ class ssh:
 
         PROJECT_PATH = os.path.dirname(os.path.abspath('__file__'))
         BASE_DIR = os.path.dirname(PROJECT_PATH)
+        filelocation = BASE_DIR + "/LogsDir/" + filename + ".log"
 
         channel = self.ssh.invoke_shell()
         # out = channel.recv(9999)
@@ -57,16 +59,16 @@ class ssh:
                     while prevdata:
                         prevdata = stdout.channel.recv(100)
                         data += prevdata
-                    filelocation = BASE_DIR+"/LogsDir/"+filename+".log"
-                    with open(filelocation, 'a') as output:
-                        output.write(data)
+
+                        with open(filelocation, 'a') as output:
+                            output.write(data)
                     print(data)
         else:
             print("Connection is closed!")
-'''
+
     def rootcmd1(self, username='default'):
         channel = self.ssh.invoke_shell()
-        #out = channel.recv(9999)
+        out = channel.recv(9999)
         channel.send('sudo su - ' + username + '\r\n')
         time.sleep(2)
         channel.send(self.sshPassword + '\r\n')
@@ -76,42 +78,47 @@ class ssh:
         channel.send('./run_tests.sh\r\n')
         # channel.send('ls -lrt\r\n')
         #max_loops = 5000
-        not_done = True
+        #not_done = True
         MAX_BUFFER = 655351
-        output = ''
+        #output = ''
         #i = 0
         sys.stdout.flush()
         sys.stdin.flush()
         sys.stderr.flush()
 
-        PROJECT_PATH = os.path.dirname(os.path.abspath('__file__'))
-        BASE_DIR = os.path.dirname(PROJECT_PATH)
-        FILELOCATION = BASE_DIR+"/LogsDir/"+"Sshdump.log"
-
-        while not channel.exit_status_ready():
-            time.sleep(1)
-            
-            # Keep reading data as long as available (up to max_loops)
-            if channel.recv_ready():
-                output = channel.recv(MAX_BUFFER)
-                prevdata = b"1"
-                while prevdata:
-                    prevdata = channel.recv(MAX_BUFFER)
-                    output += prevdata
-
-                    with open(FILELOCATION, "a") as dumplog:
-                        dumplog.write(output)
-                                   # print("Lenght ", len(channel.recv(MAX_BUFFER)))
-                print(output)
-
-            else:
-                print("Transport channel is unable to receive data")
 
 
-'''
+
+        # PROJECT_PATH = os.path.dirname(os.path.abspath('__file__'))
+        # BASE_DIR = os.path.dirname(PROJECT_PATH)
+        # FILELOCATION = BASE_DIR+"/LogsDir/"+"Sshdump.log"
+        logdump = LogMessage("Sshdump.log")
+        #while not channel.exit_status_ready():
+            # time.sleep(1)
+        # while True:            # Keep reading data as long as available (up to max_loops)
+        #     if channel.recv_ready():
+        #         output = channel.recv(MAX_BUFFER)
+        #         # prevdata = b"1"
+        #         # while prevdata:
+        #         prevdata = channel.recv(MAX_BUFFER)
+        #         output += prevdata
+        #
+        #
+        #             # with open(FILELOCATION, "a") as dumplog:
+        #             #     dumplog.write(output)
+        #                            # print("Lenght ", len(channel.recv(MAX_BUFFER)))
+        #         logdump.log.info(output)
+        #         print(output)
+        #
+        #
+        #     else:
+        #         pass
+        #         # print("Transport channel is unable to receive data")
+
+
 if __name__ == '__main__':
     connection = ssh(HOST_IP, 'tellabs', 'tellabs$123')
-    connection.SendCommand("./run_tests.sh ", 'Sshdump')
-    # connection.rootcmd1(username='stack')
+    # connection.SendCommand("./run_tests.sh ", 'Sshdump')
+    connection.rootcmd1(username='stack')
 
 

@@ -23,6 +23,7 @@ Task log_creation module will perform-
 class LogMessage:
 
     def __init__(self, module_name, loglevel=logging.INFO):
+
         self.log = logging.getLogger(module_name)
         self.LogCreation(module_name+".log", loglevel, module_name)
 
@@ -41,12 +42,16 @@ class LogMessage:
         log_location = BASE_DIR+"/LogsDir/"+logfilename
 
         formatter = logging.Formatter('%(asctime)s %(levelname)s - %(message)s\r\n')
-
-        # fileRotation = RotatingFileHandler(filename=log_location, mode='a', encoding='utf-8', maxBytes=1024, backupCount=10)
-        # fileRotation.setFormatter(formatter)
-
         file_handler = logging.FileHandler(filename=log_location, mode='a', encoding='utf-8')
         file_handler.setFormatter(formatter)
+
+        if logfilename=="Sshdump.log":
+            fh = RotatingFileHandler(filename=logfilename, mode='a', maxBytes=655351, backupCount=50, encoding="UTF-8")
+            log.addHandler(fh)
+        # fileRotation = RotatingFileHandler(filename=log_location, mode='a', encoding='utf-8', maxBytes=655351, backupCount=10)
+        # fileRotation.setFormatter(formatter)
+
+
 
         log.setLevel(level)
         log.addHandler(file_handler)
