@@ -5,6 +5,7 @@ import time
 import paramiko
 import os
 from AppLogger import LogMessage
+import socket
 
 
 
@@ -29,7 +30,17 @@ def ServerPingCheck(ip_add):
         return False
 
 #class defined for SSH to host
-class SshAutomation:
+class SSHAutomation:
+    '''
+        -Define a class named SSHAutomation:
+        -initialize that class with ip_add , username, password
+        -initialize ssh connection using SSHClient()
+        -set missing host key policy(paramiko.AutoAddPolicy())
+        -connect to server using connect(hostname=, username=, password=, port=, look_for_keys=)
+        -use transport to set channel for logging. this is used by default.
+        -connect to server for transporting channel
+        #-start a thread after initializing it.
+    '''
     client = None
 
     def __init__(self, ip_add, username, password):
@@ -45,6 +56,9 @@ class SshAutomation:
             self.client.connect(hostname=ip_add, username=username, password=password,
                             port=22, look_for_keys=False)
 
+        except paramiko.client.BadHostKeyException:
+            logPrint("couldn't verified HostKey in server")
+
         except paramiko.AuthenticationException:
             logPrint("Authentication Failed")
             quit()
@@ -56,7 +70,18 @@ class SshAutomation:
         except:
             logPrint("Unknown Error")
 
-        self.client.load_system_host_keys()
+        #To load host_keys from system
+        try:
+            self.client.load_system_host_keys()
+            logPrint("SSH_keys has been read from 'known hosts' file of user: {}".format(socket.gethostname()))
+
+        except IOError as err:
+            '''IOError: 
+                        it is raised when file is provided but file is unable to read
+            '''
+            logPrint(err)
+
+
 
 
     def SendCommand(self, cmd):
@@ -83,7 +108,7 @@ if __name__ == '__main__':
 
     if ServerPingCheck(HOST_IP_ADDRESS):
         logPrint("Server connection started")
-        fob = SshAutomation(HOST_IP_ADDRESS, "tellabs", "tellabs$123")
+        fob = SSHAutomation(HOST_IP_ADDRESS, "tellabs", "tellabs$123")
 
         fob.SendCommand("compgen -u")
         logPrint("Connection terminated")
