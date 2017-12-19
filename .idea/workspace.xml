@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ScriptsDir/AppLogger.py" afterPath="$PROJECT_DIR$/ScriptsDir/AppLogger.py" />
-      <change beforePath="$PROJECT_DIR$/ScriptsDir/SshLearning.py" afterPath="$PROJECT_DIR$/ScriptsDir/SshLearning.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SshLearning2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SshLearning2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="984">
@@ -53,6 +48,15 @@
               <folding>
                 <element signature="e#347#384#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sshdump.log" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LogsDir/Sshdump.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="-2743363">
+              <caret line="3408" column="15" lean-forward="false" selection-start-line="3408" selection-start-column="15" selection-end-line="3408" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -346,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513660201309</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Working on Ssh concepts with examples">
+      <created>1513660207308</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1513660207308</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -492,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LogsDir/Sshdump.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-2743102">
-          <caret line="3408" column="15" lean-forward="false" selection-start-line="3408" selection-start-column="15" selection-end-line="3408" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LogsDir/Sshdump.log.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-25145">
@@ -559,6 +563,13 @@
           <folding>
             <element signature="e#347#384#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogsDir/Sshdump.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-2743363">
+          <caret line="3408" column="15" lean-forward="false" selection-start-line="3408" selection-start-column="15" selection-end-line="3408" selection-end-column="15" />
         </state>
       </provider>
     </entry>
