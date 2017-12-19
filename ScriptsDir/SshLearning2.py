@@ -78,7 +78,7 @@ class ssh:
                 with open(logFileLocation, 'a') as logfile:
                     logfile.write(alldata)
             else:
-                pass
+                print("Shell is empty, Nothing to log")
 
 
     def loginAsStack(self, username='stack'):
@@ -101,6 +101,4 @@ address = "192.168.195.182"
 connection = ssh(address, username, password)
 connection.openShell()
 
-while True:
-
-    connection.loginAsStack()
+connection.loginAsStack()
