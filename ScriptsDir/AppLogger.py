@@ -45,7 +45,7 @@ class LogMessage:
         file_handler = logging.FileHandler(filename=log_location, mode='a', encoding='utf-8')
         file_handler.setFormatter(formatter)
 
-        if logfilename=="Sshdump.log":
+        if logfilename=="Sshdump":
             fh = RotatingFileHandler(filename=logfilename, mode='a', maxBytes=655351, backupCount=50, encoding="UTF-8")
             log.addHandler(fh)
         # fileRotation = RotatingFileHandler(filename=log_location, mode='a', encoding='utf-8', maxBytes=655351, backupCount=10)

@@ -1,124 +1,75 @@
-from paramiko import client
-import os
-import time
-import sys
+from __future__ import print_function
+import paramiko
+import threading
 from AppLogger import LogMessage
+import sys
 
+myLog = LogMessage("Sshdump")
 
-HOST_IP = "192.168.195.182"
 
 class ssh:
+    shell = None
+    client = None
+    transport = None
 
-    def __init__(self, ip, sshUserName, sshPassword):
-        self.ip = ip
-        self.sshUserName = sshUserName
-        self.sshPassword = sshPassword
+    def __init__(self, ip, username, password):
 
-        self.ssh = client.SSHClient()
-        self.ssh.set_missing_host_key_policy(client.AutoAddPolicy)
+        print("Connecting to server on ip ", str(ip))
+        self.client = paramiko.client.SSHClient()
+        self.client.set_missing_host_key_policy(paramiko.client.AutoAddPolicy())
+        self.client.connect(hostname=ip, username=username, password=password, look_for_keys=False)
 
-        try:
-            print("SSH connection is started with IP: {}".format(self.ip))
-            self.ssh.connect(hostname=ip, username=sshUserName, password=sshPassword, port=22,
-                             look_for_keys=False)
-            print("SSH connection has established with IP: {}".format(self.ip))
+        self.transport = paramiko.client.Transport(ip, 22)
+        self.transport.connect(username=username, password=password)
 
-        except client.BadHostKeyException as err:
-            print(err)
+        thread = threading.Thread(target=self.process)
+        thread.daemon = True
+        thread.start()
 
-        except client.SSHException as err:
-            print(err)
+    def closeConnection(self):
+        if(self.client != None):
+            self.client.close()
+            self.transport.close()
 
-        except:
-            print("Unknown Error!")
+    def openShell(self):
+        self.shell = self.client.invoke_shell()
 
-    def SendCommand(self, cmd, filename):
+    def sendShell(self, command):
+        if(self.shell):
+            self.shell.send(command + "\n")
+        else:
+            print("Shell not opened!")
+
+    def process(self):
         global connection
 
-        PROJECT_PATH = os.path.dirname(os.path.abspath('__file__'))
-        BASE_DIR = os.path.dirname(PROJECT_PATH)
-        filelocation = BASE_DIR + "/LogsDir/" + filename + ".log"
+        while True:
+            if self.shell != None and self.shell.recv_ready():
+                alldata = self.shell.recv(1024)
+                while self.shell.recv_ready():
+                    alldata += self.shell.recv(1024)
 
-        channel = self.ssh.invoke_shell()
-        # out = channel.recv(9999)
-        channel.send('sudo su - ' + "stack" + '\r\n')
-        time.sleep(2)
-        channel.send(self.sshPassword + '\r\n')
-        time.sleep(3)
-        channel.send('cd devstack\r\n')
-        time.sleep(1)
-        # channel.send('./run_tests.sh\r\n')
+                strdata = str(alldata)
+                strdata.replace("\r", "")
+                myLog.log.info(strdata)
+                print(strdata, end=" ")
 
-        if self.ssh:
-            stdin, stdout, stderr = self.ssh.exec_command(cmd)
-
-            while not stdout.channel.exit_status_ready():
-                if stdout.channel.recv_ready():
-                    data = stdout.channel.recv(100)
-                    prevdata = b"1"
-                    while prevdata:
-                        prevdata = stdout.channel.recv(100)
-                        data += prevdata
-
-                        with open(filelocation, 'a') as output:
-                            output.write(data)
-                    print(data)
-        else:
-            print("Connection is closed!")
-
-    def rootcmd1(self, username='default'):
-        channel = self.ssh.invoke_shell()
-        out = channel.recv(9999)
-        channel.send('sudo su - ' + username + '\r\n')
-        time.sleep(2)
-        channel.send(self.sshPassword + '\r\n')
-        time.sleep(3)
-        channel.send('cd devstack\r\n')
-        time.sleep(1)
-        channel.send('./run_tests.sh\r\n')
-        # channel.send('ls -lrt\r\n')
-        #max_loops = 5000
-        #not_done = True
-        MAX_BUFFER = 655351
-        #output = ''
-        #i = 0
-        sys.stdout.flush()
-        sys.stdin.flush()
-        sys.stderr.flush()
+                if (strdata.endswith("$ ")):
+                    print("\n$", end=" ")
 
 
+sshUsername = "tellabs"
+sshPassword = "tellabs$123"
+sshServer = "192.168.195.182"
 
+connection = ssh(sshServer, sshUsername, sshPassword)
+connection.openShell()
+while True:
+    # command = input('$ ')
+    # if command.startswith(" "):
+    #     command = command[1:]
+    connection.sendShell("cd devstack")
+    connection.sendShell("./run_tests.sh")
 
-        # PROJECT_PATH = os.path.dirname(os.path.abspath('__file__'))
-        # BASE_DIR = os.path.dirname(PROJECT_PATH)
-        # FILELOCATION = BASE_DIR+"/LogsDir/"+"Sshdump.log"
-        logdump = LogMessage("Sshdump.log")
-        #while not channel.exit_status_ready():
-            # time.sleep(1)
-        # while True:            # Keep reading data as long as available (up to max_loops)
-        #     if channel.recv_ready():
-        #         output = channel.recv(MAX_BUFFER)
-        #         # prevdata = b"1"
-        #         # while prevdata:
-        #         prevdata = channel.recv(MAX_BUFFER)
-        #         output += prevdata
-        #
-        #
-        #             # with open(FILELOCATION, "a") as dumplog:
-        #             #     dumplog.write(output)
-        #                            # print("Lenght ", len(channel.recv(MAX_BUFFER)))
-        #         logdump.log.info(output)
-        #         print(output)
-        #
-        #
-        #     else:
-        #         pass
-        #         # print("Transport channel is unable to receive data")
-
-
-if __name__ == '__main__':
-    connection = ssh(HOST_IP, 'tellabs', 'tellabs$123')
-    # connection.SendCommand("./run_tests.sh ", 'Sshdump')
-    connection.rootcmd1(username='stack')
 
 
