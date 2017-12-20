@@ -9,96 +9,70 @@
 
 -start a thread after initializing it.
 
+1. Create a class name SSHAutomation & initialize
+    - ip_add
+    - username
+    - password
+2. call paramiko.client.SSHClient()
+3. set set_missing_host_key_policy(client.AutoAddPolicy())
+4. Connect to server with
+    - hostname
+    - username
+    - password
+    - port
+    - look_for_key
+
+5. define close_connection_host(self)
+    - use try & except block for capturing any exception
+    - close the open connection using close method
+    - assign connection attribute to None
+
+6. define command_required_root_privilege(self,
+        set_password=False, password='root',
+        first_command, second_command, username='default'
+        )
+     -invoke_shell() and send following command
+        - send "sudo su - \n" and sleep for 2secs
+        - send password to enable sudo and sleep for 2secs
+        - send first_command and sleep for 2secs
+        - send second_command and sleep for 2secs
+        - check set_password if True then
+            -change the password using command "passwd username"
+            -send password and sleep for 2 secs
+            -send confirmation password again and sleep for 2secs
+    - check if channel is ready to receive data else sleep for 5secs
+    - receive the data and store it in output variable
+    - finally decode the output in utf-8 or ascii and print or log it.
+
+7. define command_required_user_privilege(self, command,
+                        sudo=False)
+    -if user provide commands requires sudo permission then
+        we need to pass password.
+    - one way to deal this problem is using
+        sudo -S -p '' sudo ls -ltr
+        -p: prompt, use a custom password prompt with optional escape sequence[%].
+        -S: --stdin, write the prompt to the standard error
+         and read the password from the standard input
+         instead of using the terminal device.
+         The password must be followed by a newline character.
+    - use exec_command(command) to store stdin, stdout & stderr
+    - if password exist the write the password to stdin and then flush once it is used.
+    return(stdout.readlines(), stderr.readlines())
+
+8. define write_local_conf_data(self, filename, data)
+    - open SFTPClient session using "open_sftp()"
+    - change directory to devstack using chdir()
+    - for time being, if error out, mkdir(devstack) and filepath='devstack/'+filename
+    - open file in write mode and then write data.
+    -use try and except to capture exception properly.
+
+
+
+
+
+
+
 
 '''
-from __future__ import print_function
-import threading, paramiko
-import os
-import time
 
 
-class ssh:
-    client = None
-    transport = None
-    shell = None
-
-    def __init__(self, address, username, password):
-        self.address = address
-        self.username = username
-        self.password = password
-
-        self.client = paramiko.client.SSHClient()
-        self.client.set_missing_host_key_policy(paramiko.client.AutoAddPolicy())
-        print("Starting SSH connection!")
-        self.client.connect(hostname=address,
-                            username=username,
-                            password=password,
-                            port=22,
-                            look_for_keys=False)
-        print("Connection Established!")
-        self.transport = paramiko.Transport(address, 22)
-        self.transport.connect(username=username,
-                               password=password)
-
-        thread = threading.Thread(target=self.process())
-        thread.daemon = True
-        thread.start()
-
-
-    def closeConnection(self):
-        if (self.client != None):
-            self.client.close()
-            self.transport.close()
-
-
-    def openShell(self):
-        self.shell = self.client.invoke_shell()
-
-
-    def sendShellCommand(self, command):
-        if (self.client):
-            self.shell.send(command + "\n")
-        else:
-            print("Shell not opened.")
-
-
-    def process(self):
-        global connection
-        PROJECT_PATH = os.path.dirname(os.path.abspath('__file__'))
-        BASE_DIR = os.path.dirname(PROJECT_PATH)
-        logFileLocation = BASE_DIR+"\LogsDir"+"NewSshDump.log"
-        while True:
-            if self.shell != None and self.shell.recv_ready():
-                alldata = self.shell.recv(1024)
-                while self.shell.recv_ready():
-                    alldata += self.shell.recv(1024)
-
-                print(alldata)
-
-                with open(logFileLocation, 'a') as logfile:
-                    logfile.write(alldata)
-            else:
-                print("Shell is empty, Nothing to log")
-
-
-    def loginAsStack(self, username='stack'):
-        self.sendShellCommand('sudo su - '+ username+'\n')
-        time.sleep(2)
-        self.sendShellCommand(self.password+'\n')
-        time.sleep(3)
-        self.sendShellCommand('cd devstack'+'\n')
-        time.sleep(2)
-        self.sendShellCommand('./run_test.sh'+'\n')
-
-
-
-
-username = "tellabs"
-password = "tellabs$123"
-address = "192.168.195.182"
-
-
-connection = ssh(address, username, password)
-connection.openShell()
-
-connection.loginAsStack()

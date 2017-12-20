@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/LogsDir/ReadJsonFile.log" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/ScriptsDir/AppLogger.py" afterPath="$PROJECT_DIR$/ScriptsDir/AppLogger.py" />
-      <change beforePath="$PROJECT_DIR$/ScriptsDir/SshLearning.py" afterPath="$PROJECT_DIR$/ScriptsDir/SshLearning.py" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" afterPath="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,14 +30,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SshLearning.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SshLearning.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state relative-caret-position="960">
+              <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SshLearning2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="879">
+              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="72">
+                <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -76,15 +98,16 @@
         <option value="$PROJECT_DIR$/scripts/SshAutomation.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/__init__.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/ReadJsonFile.py" />
-        <option value="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/SshAutomation.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/SSHAutomation.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/AppLogger.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/SshLearning.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="862" />
     <option name="y" value="24" />
     <option name="width" value="817" />
@@ -367,16 +390,31 @@
       <option name="project" value="LOCAL" />
       <updated>1513681365732</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Worked on load_system_host_Keys() and __doc__">
+      <created>1513762574737</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1513762574737</updated>
+    </task>
+    <task id="LOCAL-00013" summary="                                                        Worked on load_system_host_Keys() and __doc__">
+      <created>1513763098379</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513763098379</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="862" y="24" width="1637" height="1062" extended-state="6" />
+    <frame x="862" y="24" width="817" height="1026" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15040906" sideWeight="0.4941003" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3229572" sideWeight="0.4941003" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Utils" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3400223" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3189189" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -426,7 +464,8 @@
     <MESSAGE value="Working on Ssh concepts with examples" />
     <MESSAGE value="Worked on logPrint function and ping function." />
     <MESSAGE value="Worked on load_system_host_Keys() and __doc__" />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on load_system_host_Keys() and __doc__" />
+    <MESSAGE value="                                                        Worked on load_system_host_Keys() and __doc__" />
+    <option name="LAST_COMMIT_MESSAGE" value="                                                        Worked on load_system_host_Keys() and __doc__" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -487,6 +526,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -514,6 +554,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -609,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/AppLogger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -626,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        <state relative-caret-position="960">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -635,5 +669,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LogsDir/Sshdump.log" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="72">
+            <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="879">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
