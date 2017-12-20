@@ -56,7 +56,7 @@ class ssh:
 
                 if (strdata.endswith("$ ")):
                     print("\n$", end=" ")
-
+                sys.exit()
 
 sshUsername = "tellabs"
 sshPassword = "tellabs$123"
