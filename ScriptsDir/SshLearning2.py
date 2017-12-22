@@ -1,6 +1,17 @@
 import paramiko
 import time
+import os
 
+
+
+def ping_check_for_server(ip_add):
+
+    response = os.system("ping -c 1 " + ip_add)
+    if response == 0:
+        print("server is Active!")
+
+    else:
+        print("Server is inActive, server required timed out!")
 '''
 -Define a class named ssh:
 -initialize that class with ip , username, password
@@ -85,6 +96,7 @@ class SSHAutomation:
         self.client.set_missing_host_key_policy(paramiko.client.AutoAddPolicy)
 
         try:
+
             self.client.connect(hostname=ip_add, username=username, password=password,
                                 port=22, look_for_keys=False)
 
