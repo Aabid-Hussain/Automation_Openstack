@@ -16,21 +16,7 @@ import time
     - ip_add
     - username
     - password
-    
-'''
 
-class SSHAutomation:
-
-    def __init__(self, ip_add, username, password):
-        self.ip_add = ip_add
-        self.username = username
-        self.password = password
-
-        self.client = paramiko.client.SSHClient()
-
-        pass
-
-'''
 2. call paramiko.client.SSHClient()
 3. set set_missing_host_key_policy(client.AutoAddPolicy())
 4. Connect to server with
@@ -87,4 +73,54 @@ class SSHAutomation:
 
 '''
 
+
+class SSHAutomation:
+
+    def __init__(self, ip_add, username, password):
+        self.ip_add = ip_add
+        self.username = username
+        self.password = password
+
+        self.client = paramiko.client.SSHClient()
+        self.client.set_missing_host_key_policy(paramiko.client.AutoAddPolicy)
+
+        try:
+            self.client.connect(hostname=ip_add, username=username, password=password,
+                                port=22, look_for_keys=False)
+
+        except paramiko.AuthenticationException as err:
+            print("Authentication error occured!")
+            print(err)
+
+        except paramiko.client. BadHostKeyException as err:
+            print(err)
+
+        except paramiko.client.SSHException as err:
+            print(err)
+        except:
+            print("Unknown Error Occured!")
+
+
+    def close_connection_host(self, first_command, second_command,
+                              username='default', set_password=False,
+                              password='root'):
+
+        pass
+
+
+    def command_required_root_privilage(self):
+        pass
+
+    def command_required_user_privilage(self):
+        pass
+
+    def write_local_conf_data(self):
+        pass
+
+
+if __name__ == '__main__':
+
+    ip_add, username, password = "192.168.195.182", "tellabs", "openstack123"
+    SSHObj = SSHAutomation(ip_add, username, password)
+    SSHObj.command_required_root_privilage()
 
