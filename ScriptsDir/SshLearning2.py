@@ -1,3 +1,6 @@
+import paramiko
+import time
+
 '''
 -Define a class named ssh:
 -initialize that class with ip , username, password
@@ -13,6 +16,21 @@
     - ip_add
     - username
     - password
+    
+'''
+
+class SSHAutomation:
+
+    def __init__(self, ip_add, username, password):
+        self.ip_add = ip_add
+        self.username = username
+        self.password = password
+
+        self.client = paramiko.client.SSHClient()
+
+        pass
+
+'''
 2. call paramiko.client.SSHClient()
 3. set set_missing_host_key_policy(client.AutoAddPolicy())
 4. Connect to server with
@@ -65,12 +83,6 @@
     - for time being, if error out, mkdir(devstack) and filepath='devstack/'+filename
     - open file in write mode and then write data.
     -use try and except to capture exception properly.
-
-
-
-
-
-
 
 
 '''
