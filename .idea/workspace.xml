@@ -44,8 +44,8 @@
       <file leaf-file-name="SshLearning2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -468,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514279432307</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="written logic for closing SSH connection.">
+      <created>1514284097876</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1514284097876</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -531,7 +538,8 @@
     <MESSAGE value="                                                        Worked on load_system_host_Keys() and __doc__" />
     <MESSAGE value="designed coding logic and it's function. working on writing the code for the same." />
     <MESSAGE value="added version2 &amp; version3 openrc files." />
-    <option name="LAST_COMMIT_MESSAGE" value="added version2 &amp; version3 openrc files." />
+    <MESSAGE value="written logic for closing SSH connection." />
+    <option name="LAST_COMMIT_MESSAGE" value="written logic for closing SSH connection." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -801,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="80" column="8" lean-forward="false" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

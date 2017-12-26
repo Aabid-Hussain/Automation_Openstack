@@ -70,6 +70,17 @@ class SSHAutomation:
             print("Unknown Error Occured!")
 
 
+    def __del__(self):
+        if self.client:
+            try:
+                print("Connection is closing for host {}\n".format(self.ip_add))
+                self.client.close()
+                self.client = None
+
+            except:
+                pass
+
+
     def close_connection_host(self):
 
         '''
