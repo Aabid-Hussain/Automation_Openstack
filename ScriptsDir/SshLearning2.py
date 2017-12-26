@@ -14,7 +14,11 @@ import os
 '''
 
 def ping_check_for_server(ip_add):
-
+    '''
+    check response code equal to 0, if true server is active else server is inactive.
+    :param ip_add:
+    :return:
+    '''
     response = os.system("ping -c 1 " + ip_add)
     if response == 0:
         print("server is Active!")
