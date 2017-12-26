@@ -78,7 +78,14 @@ class SSHAutomation:
         - close the open connection using close method
         - assign connection attribute to None
         '''
-        pass
+        if self.client:
+            try:
+                print("Connection is closing for host {}\n".format(self.ip_add))
+                self.client.close()
+                self.client = None
+            except:
+                print("Connection is already closed!")
+                pass
 
 
     def command_required_root_privilage(self):
