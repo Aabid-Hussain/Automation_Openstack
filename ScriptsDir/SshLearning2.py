@@ -139,7 +139,7 @@ class SSHAutomation:
 
         pass
 
-    def write_local_conf_data(self):
+    def write_local_conf_data(self, filename, local_conf_data):
         '''
         - define write_local_conf_data(self, filename, data)
         - open SFTPClient session using "open_sftp()"
@@ -149,7 +149,23 @@ class SSHAutomation:
         - use try and except to capture exception properly.
         '''
 
-        pass
+        self.open_ssh_file_conneciton = self.client.open_sftp()
+        file_path = filename
+
+        try:
+            try:
+                self.open_ssh_file_conneciton.chdir('devstack')
+
+            except IOError:
+                self.open_ssh_file_conneciton.mkdir('devstack')
+                file_path = 'devstack/'+filename
+
+            with open(file_path, 'w') as file_to_write:
+                file_to_write.write(local_conf_data)
+
+        except Exception as err :
+            print("***Caught Excpetion as {}:{}".format(err.__class__, err))
+
 
 
 if __name__ == '__main__':
