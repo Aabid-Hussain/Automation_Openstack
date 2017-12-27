@@ -34,6 +34,6 @@ def package_uninstall(package):
         pass
 
 if __name__ == '__main__':
-
+    pass
 
 #pip install -e git+https://github.com/paramiko/paramiko/#egg=paramiko
