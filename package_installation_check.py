@@ -3,18 +3,19 @@ import pip
 import time
 
 
-def package_installation_check(package):
+def package_installation_check():
 
     try:
-        import package
+        import time
         return True
 
     except:
         return False
 
-def package_install(package):
 
-    if package_installation_check(package):
+def package_install(package='os', check=False):
+
+    if check:
         print("{} Package is already installed!".format(package))
 
     else:
@@ -25,7 +26,7 @@ def package_install(package):
 
 
 def package_uninstall(package):
-    if package_installation_check(package):
+    if package_installation_check():
         #for debugging: pip.main(["uninstall", package, "-vv"])
         pip.main(["uninstall", package])
         time.sleep(2)
@@ -33,7 +34,25 @@ def package_uninstall(package):
     else:
         pass
 
+
 if __name__ == '__main__':
-    pass
+
+
+    if package_installation_check():
+        package_install(package='time', check=True)
+
+
+    # package_install("fabric")
+    # package_install("select")
+
+    # package_install("logging")
+    # package_install("os")
+    # package_install("sys")
+    # package_install("json")
+    # package_install("exception")
+    # package_install("re")
+
+
+
 
 #pip install -e git+https://github.com/paramiko/paramiko/#egg=paramiko
