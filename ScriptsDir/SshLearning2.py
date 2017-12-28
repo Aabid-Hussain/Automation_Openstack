@@ -131,9 +131,9 @@ class SSHAutomation:
         time.sleep(1)
         invoke_shell_command.send(self.password+"\n")
         time.sleep(2)
-        invoke_shell_command.send(first_command)
+        invoke_shell_command.send(first_command+"\n")
         time.sleep(1)
-        invoke_shell_command.send(second_command)
+        invoke_shell_command.send(second_command+"\n")
         time.sleep(1)
 
         if set_password:
@@ -201,10 +201,9 @@ class SSHAutomation:
 
 if __name__ == '__main__':
 
-    ip_add, username, password = "192.168.195.182", "tellabs", "openstack123"
-    SSHObj = SSHAutomation(ip_add, username, password)
+    ip_add, username, password = "192.168.195.182", "tellabs", "tellabs$123"
 
     if ping_check_for_server(ip_add):
-
+        SSHObj = SSHAutomation(ip_add, username, password)
         SSHObj.command_required_root_privilage("df -h", "fdisk -l")
 
