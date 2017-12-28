@@ -99,7 +99,9 @@ class SSHAutomation:
                 pass
 
 
-    def command_required_root_privilage(self):
+    def command_required_root_privilage(self, first_command, second_command,
+                                        set_password=False, user_password='root', username='default'):
+
         '''
         define command_required_root_privilege(self,
                 set_password=False, password='root',
@@ -119,7 +121,33 @@ class SSHAutomation:
         - finally decode the output in utf-8 or ascii and print or log it.
         '''
 
-        pass
+        invoke_shell_command = self.client.invoke_shell()
+        output_of_shell = invoke_shell_command.recv(9999)
+
+        invoke_shell_command.send("sudo su - \n")
+        time.sleep(1)
+        invoke_shell_command.send(self.password+"\n")
+        time.sleep(2)
+        invoke_shell_command.send(first_command)
+        time.sleep(1)
+        invoke_shell_command.send(second_command)
+        time.sleep(1)
+
+        if set_password:
+
+            invoke_shell_command.send("passwd "+username+"\n")
+            time.sleep(0.5)
+            invoke_shell_command.send(user_password+"\n")
+            time.sleep(0.5)
+            invoke_shell_command.send(user_password + "\n")
+            time.sleep(0.5)
+
+        while not invoke_shell_command.recv_ready():
+            time.sleep(3)
+
+        output_of_shell = invoke_shell_command.recv(9999)
+        print(output_of_shell.decode('ascii'))
+
 
     def command_required_user_privilage(self):
         '''
