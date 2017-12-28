@@ -22,9 +22,11 @@ def ping_check_for_server(ip_add):
     response = os.system("ping -c 1 " + ip_add)
     if response == 0:
         print("server is Active!")
+        return True
 
     else:
         print("Server is inActive, server required timed out!")
+        return False
 
 
 class SSHAutomation:
@@ -49,16 +51,16 @@ class SSHAutomation:
         self.username = username
         self.password = password
 
-        self.client = paramiko.client.SSHClient()
-        self.client.set_missing_host_key_policy(paramiko.client.AutoAddPolicy)
+        self.client = paramiko.SSHClient()
+        self.client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
         try:
 
             self.client.connect(hostname=ip_add, username=username, password=password,
-                                port=22, look_for_keys=False)
+                                look_for_keys=False)
 
         except paramiko.AuthenticationException as err:
-            print("Authentication error occured!")
+            #print("Authentication error occurred!")
             print(err)
 
         except paramiko.client. BadHostKeyException as err:
@@ -66,8 +68,9 @@ class SSHAutomation:
 
         except paramiko.client.SSHException as err:
             print(err)
+
         except:
-            print("Unknown Error Occured!")
+            print("Unknown Error Occurred!")
 
 
     def __del__(self):
@@ -200,5 +203,8 @@ if __name__ == '__main__':
 
     ip_add, username, password = "192.168.195.182", "tellabs", "openstack123"
     SSHObj = SSHAutomation(ip_add, username, password)
-    SSHObj.command_required_root_privilage()
+
+    if ping_check_for_server(ip_add):
+
+        SSHObj.command_required_root_privilage("df -h", "fdisk -l")
 
