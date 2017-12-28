@@ -152,7 +152,7 @@ class SSHAutomation:
         print(output_of_shell.decode('ascii'))
 
 
-    def command_required_user_privilage(self):
+    def command_required_user_privilage(self, command, sudo=False):
         '''
         define command_required_user_privilege(self, command, sudo=False)
             -if user provide commands requires sudo permission then we need to pass password.
@@ -167,8 +167,18 @@ class SSHAutomation:
             - if password exist the write the password to stdin and then flush once it is used.
             - return(stdout.readlines(), stderr.readlines())
         '''
+        checker_if_pwd_required = False
+        if sudo:
+            command = "sudo -S -p '' {}".format(command)
+            checker_if_pwd_required = self.password is not None and len(self.password)>0
+        stdin, stdout, stderr = self.client.exec_command(command)
 
-        pass
+        if checker_if_pwd_required:
+            stdin.write(self.password+"\n")
+            stdin.flush()
+
+        return (stdout.readlines(), stderr.readlines())
+
 
     def write_local_conf_data(self, filename, local_conf_data):
         '''
@@ -206,4 +216,5 @@ if __name__ == '__main__':
     if ping_check_for_server(ip_add):
         SSHObj = SSHAutomation(ip_add, username, password)
         SSHObj.command_required_root_privilage("df -h", "fdisk -l")
+        print(SSHObj.command_required_user_privilage("sudo ls -ltr", sudo=True))
 

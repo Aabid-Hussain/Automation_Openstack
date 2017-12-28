@@ -1,16 +1,25 @@
+from imp import find_module
 import sys
 import pip
 import time
 
 
 def package_installation_check():
-
     try:
         import time
         return True
 
     except:
         return False
+
+def better_way_of_package_check(list_of_package):
+    for item in list_of_package:
+        try:
+            find_module(item)
+            print("{0:10} :--> Installed".format(item))
+        except ImportError as err:
+            print("{0:10} :--> Not installed".format(item))
+
 
 
 def package_install(package='os', check=False):
@@ -37,10 +46,12 @@ def package_uninstall(package):
 
 if __name__ == '__main__':
 
+    list_of_package = ["fabric", "select", "logging", "os", "sys", "json", "exception", "re", "abddd"]
+    better_way_of_package_check(list_of_package)
 
-    if package_installation_check():
-        package_install(package='time', check=True)
-
+    # if package_installation_check():
+    #     package_install(package='time', check=True)
+    #
 
     # package_install("fabric")
     # package_install("select")
