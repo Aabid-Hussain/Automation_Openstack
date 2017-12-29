@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" afterPath="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" />
-      <change beforePath="$PROJECT_DIR$/package_installation_check.py" afterPath="$PROJECT_DIR$/package_installation_check.py" />
+      <change beforePath="$PROJECT_DIR$/package_installation_check.py" afterPath="$PROJECT_DIR$/check_prerequisite_of_script.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="443">
-              <caret line="182" column="63" lean-forward="true" selection-start-line="182" selection-start-column="63" selection-end-line="182" selection-end-column="63" />
+              <caret line="182" column="63" lean-forward="false" selection-start-line="182" selection-start-column="63" selection-end-line="182" selection-end-column="63" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -30,23 +29,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="demo-openrc.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-openrc.sh">
+      <file leaf-file-name="check_prerequisite_of_script.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/check_prerequisite_of_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-278">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package_installation_check.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package_installation_check.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
+                <marker date="1514457211719" expanded="true" signature="1235:1323" ph="..." />
               </folding>
             </state>
           </provider>
@@ -87,6 +77,7 @@
         <option value="$PROJECT_DIR$/ScriptsDir/AppLogger.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" />
         <option value="$PROJECT_DIR$/package_installation_check.py" />
+        <option value="$PROJECT_DIR$/version.py" />
       </list>
     </option>
   </component>
@@ -174,25 +165,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.package_installation_check">
-    <configuration name="ReadJsonFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ScriptsDir" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Automation_Openstack" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScriptsDir/ReadJsonFile.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.version">
     <configuration name="SshAutomation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,26 +232,44 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Automation_Openstack" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/package_installation_check.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/check_prerequisite_of_script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="version" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Automation_Openstack" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/version.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ReadJsonFile" />
-      <item index="1" class="java.lang.String" itemvalue="Python.SshAutomation" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SshLearning" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SshLearning2" />
-      <item index="4" class="java.lang.String" itemvalue="Python.package_installation_check" />
+      <item index="0" class="java.lang.String" itemvalue="Python.SshAutomation" />
+      <item index="1" class="java.lang.String" itemvalue="Python.SshLearning" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SshLearning2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.package_installation_check" />
+      <item index="4" class="java.lang.String" itemvalue="Python.version" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.package_installation_check" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SshLearning2" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SshLearning" />
-        <item index="3" class="java.lang.String" itemvalue="Python.SshAutomation" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ReadJsonFile" />
+        <item index="0" class="java.lang.String" itemvalue="Python.version" />
+        <item index="1" class="java.lang.String" itemvalue="Python.package_installation_check" />
+        <item index="2" class="java.lang.String" itemvalue="Python.SshLearning2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.SshLearning" />
+        <item index="4" class="java.lang.String" itemvalue="Python.SshAutomation" />
       </list>
     </recent_temporary>
   </component>
@@ -527,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514444600247</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="issue is fixed for bug: &quot;No handlers could be found for logger &quot;paramiko.transport&quot;">
+      <created>1514455673462</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1514455673462</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -538,12 +536,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Utils" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3400223" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58162165" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.89297295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32887402" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.89297295" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8421622" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13530523" sideWeight="0.5058997" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SFDX" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -606,13 +604,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/AppLogger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3288">
@@ -813,7 +804,7 @@
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
-          <caret line="182" column="63" lean-forward="true" selection-start-line="182" selection-start-column="63" selection-end-line="182" selection-end-column="63" />
+          <caret line="182" column="63" lean-forward="false" selection-start-line="182" selection-start-column="63" selection-end-line="182" selection-end-column="63" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -828,12 +819,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package_installation_check.py">
+    <entry file="file://$PROJECT_DIR$/version.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="319">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_prerequisite_of_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
+            <marker date="1514457211719" expanded="true" signature="1235:1323" ph="..." />
           </folding>
         </state>
       </provider>
