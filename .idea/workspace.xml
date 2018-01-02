@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ScriptsDir/credentials.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ScriptsDir/environ_variables.sh" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/ScriptsDir/VM_Spawning.py" afterPath="$PROJECT_DIR$/ScriptsDir/VM_Spawning.py" />
+      <change beforePath="$PROJECT_DIR$/ScriptsDir/credentials.py" afterPath="$PROJECT_DIR$/ScriptsDir/credentials.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +46,8 @@
       <file leaf-file-name="VM_Spawning.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/VM_Spawning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding>
                 <element signature="e#25#36#0" expanded="true" />
               </folding>
@@ -54,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="credentials.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="credentials.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/credentials.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="240">
+              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -66,24 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_prerequisite_of_script.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check_prerequisite_of_script.py">
+      <file leaf-file-name="environ_variables.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScriptsDir/environ_variables.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-                <marker date="1514871201998" expanded="true" signature="1237:1325" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exception.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exception.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+            <state relative-caret-position="264">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -129,6 +117,7 @@
         <option value="$PROJECT_DIR$/check_prerequisite_of_script.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/VM_Spawning.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/credentials.py" />
+        <option value="$PROJECT_DIR$/ScriptsDir/environ_variables.sh" />
       </list>
     </option>
   </component>
@@ -604,7 +593,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514871914442</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="added credentials.py for exporting environ variables.">
+      <created>1514872249560</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1514872249560</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -676,7 +672,8 @@
     <MESSAGE value="issue is fixed for bug: &quot;No handlers could be found for logger &quot;paramiko.transport&quot;" />
     <MESSAGE value="added exception.py file for self-designed exception." />
     <MESSAGE value="added VM_Spawning.py for creating vm in openstack using python." />
-    <option name="LAST_COMMIT_MESSAGE" value="added VM_Spawning.py for creating vm in openstack using python." />
+    <MESSAGE value="added credentials.py for exporting environ variables." />
+    <option name="LAST_COMMIT_MESSAGE" value="added credentials.py for exporting environ variables." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -685,16 +682,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="984">
-          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SSHAutomation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1320">
@@ -899,8 +886,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/check_prerequisite_of_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="-72">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
             <marker date="1514871201998" expanded="true" signature="1237:1325" ph="..." />
@@ -908,12 +895,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
+    <entry file="file://$PROJECT_DIR$/ScriptsDir/VM_Spawning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="175" column="35" lean-forward="true" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="35" />
+        <state relative-caret-position="360">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#25#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -928,23 +915,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/VM_Spawning.py">
+    <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="3840">
+          <caret line="175" column="35" lean-forward="true" selection-start-line="175" selection-start-column="35" selection-end-line="175" selection-end-column="35" />
           <folding>
-            <element signature="e#25#36#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/credentials.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScriptsDir/environ_variables.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -3,12 +3,11 @@
 
 import time
 from subprocess import call
-import os
+from credentials import get_nova_credentials_v2
+from novaclient.client import Client
 
 
 call('credentials.py')
-
-from novaclient.client import Client
 
 try:
 
