@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/ScriptsDir/VM_Spawning.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ScriptsDir/credentials.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ScriptsDir/VM_Spawning.py" afterPath="$PROJECT_DIR$/ScriptsDir/VM_Spawning.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,12 +42,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VM_Spawning.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VM_Spawning.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/VM_Spawning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="24">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#25#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="credentials.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ScriptsDir/credentials.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,6 +128,7 @@
         <option value="$PROJECT_DIR$/exception.py" />
         <option value="$PROJECT_DIR$/check_prerequisite_of_script.py" />
         <option value="$PROJECT_DIR$/ScriptsDir/VM_Spawning.py" />
+        <option value="$PROJECT_DIR$/ScriptsDir/credentials.py" />
       </list>
     </option>
   </component>
@@ -581,7 +597,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514871208715</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added VM_Spawning.py for creating vm in openstack using python.">
+      <created>1514871914442</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1514871914442</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -652,7 +675,8 @@
     <MESSAGE value="working on issue &quot;No handlers could be found for logger &quot;paramiko.transport&quot;" />
     <MESSAGE value="issue is fixed for bug: &quot;No handlers could be found for logger &quot;paramiko.transport&quot;" />
     <MESSAGE value="added exception.py file for self-designed exception." />
-    <option name="LAST_COMMIT_MESSAGE" value="added exception.py file for self-designed exception." />
+    <MESSAGE value="added VM_Spawning.py for creating vm in openstack using python." />
+    <option name="LAST_COMMIT_MESSAGE" value="added VM_Spawning.py for creating vm in openstack using python." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -661,14 +685,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/AppLogger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="984">
@@ -914,9 +930,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/VM_Spawning.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#25#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ScriptsDir/credentials.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
