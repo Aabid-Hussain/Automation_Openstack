@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/exception.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/check_prerequisite_of_script.py" afterPath="$PROJECT_DIR$/check_prerequisite_of_script.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,24 +29,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_prerequisite_of_script.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="check_prerequisite_of_script.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/check_prerequisite_of_script.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="480">
+              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <marker date="1514457211719" expanded="true" signature="1235:1323" ph="..." />
+                <marker date="1514871201998" expanded="true" signature="1237:1325" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exception.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="exception.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exception.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <state relative-caret-position="312">
+              <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -89,6 +89,7 @@
         <option value="$PROJECT_DIR$/package_installation_check.py" />
         <option value="$PROJECT_DIR$/version.py" />
         <option value="$PROJECT_DIR$/exception.py" />
+        <option value="$PROJECT_DIR$/check_prerequisite_of_script.py" />
       </list>
     </option>
   </component>
@@ -543,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514530297129</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="added exception.py file for self-designed exception.">
+      <created>1514871120540</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1514871120540</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -613,7 +621,8 @@
     <MESSAGE value="written code for command_required_root_privilage in SshLearning2.py" />
     <MESSAGE value="working on issue &quot;No handlers could be found for logger &quot;paramiko.transport&quot;" />
     <MESSAGE value="issue is fixed for bug: &quot;No handlers could be found for logger &quot;paramiko.transport&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="issue is fixed for bug: &quot;No handlers could be found for logger &quot;paramiko.transport&quot;" />
+    <MESSAGE value="added exception.py file for self-designed exception." />
+    <option name="LAST_COMMIT_MESSAGE" value="added exception.py file for self-designed exception." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -827,17 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/check_prerequisite_of_script.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1514457211719" expanded="true" signature="1235:1323" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/version.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -848,9 +846,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/exception.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="312">
+          <caret line="13" column="60" lean-forward="true" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_prerequisite_of_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1514871201998" expanded="true" signature="1237:1325" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

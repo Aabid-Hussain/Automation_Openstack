@@ -20,7 +20,7 @@ def better_way_of_package_check(list_of_package):
 
 def package_install(dict_container):
 
-    list_of_package = [k for k, v in dict_container.items() if v=='N']
+    list_of_package = [k for k, v in dict_container.items() if v == 'N']
     # import pdb; pdb.set_trace()
     if not list_of_package:
         print("\n***All the Packages are installed***\n")
