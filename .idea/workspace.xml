@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/ScriptsDir/VM_Spawning.py" afterPath="$PROJECT_DIR$/VMScripts/VM_Spawning.py" />
+      <change beforePath="$PROJECT_DIR$/ScriptsDir/credentials.py" afterPath="$PROJECT_DIR$/VMScripts/credentials.py" />
+      <change beforePath="$PROJECT_DIR$/ScriptsDir/environ_variables.sh" afterPath="$PROJECT_DIR$/VMScripts/environ_variables.sh" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,7 +44,7 @@
         </entry>
       </file>
       <file leaf-file-name="VM_Spawning.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScriptsDir/VM_Spawning.py">
+        <entry file="file://$PROJECT_DIR$/VMScripts/VM_Spawning.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
               <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
@@ -77,17 +80,17 @@
         </entry>
       </file>
       <file leaf-file-name="credentials.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ScriptsDir/credentials.py">
+        <entry file="file://$PROJECT_DIR$/VMScripts/credentials.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="456">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="environ_variables.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ScriptsDir/environ_variables.sh">
+        <entry file="file://$PROJECT_DIR$/VMScripts/environ_variables.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
               <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
@@ -193,11 +196,6 @@
             <path>
               <item name="Automation_Openstack" type="b2602c69:ProjectViewProjectNode" />
               <item name="Automation_Openstack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Automation_Openstack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Automation_Openstack" type="462c0819:PsiDirectoryNode" />
-              <item name="ConfigDir" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Automation_Openstack" type="b2602c69:ProjectViewProjectNode" />
@@ -652,13 +650,21 @@
       <option name="project" value="LOCAL" />
       <updated>1514955931735</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added scripts for VM_create.py and others.">
+      <created>1514957874385</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1514957874385</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="-4" width="1635" height="1054" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16173694" sideWeight="0.4941003" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16173694" sideWeight="0.4941003" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Utils" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3400223" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -936,7 +942,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/environ_variables.sh">
+    <entry file="file://$PROJECT_DIR$/VMScripts/environ_variables.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
@@ -944,7 +950,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/VM_Spawning.py">
+    <entry file="file://$PROJECT_DIR$/VMScripts/VM_Spawning.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
@@ -982,10 +988,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScriptsDir/credentials.py">
+    <entry file="file://$PROJECT_DIR$/VMScripts/credentials.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="456">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
