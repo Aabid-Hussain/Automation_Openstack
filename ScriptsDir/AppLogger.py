@@ -41,6 +41,8 @@ class LogMessage:
 
         log_location = BASE_DIR+"/LogsDir/"+logfilename
 
+        import pdb; pdb.set_trace()
+
         formatter = logging.Formatter('%(asctime)s %(levelname)s - %(message)s\r\n')
         file_handler = logging.FileHandler(filename=log_location, mode='a', encoding='utf-8')
         file_handler.setFormatter(formatter)
@@ -60,3 +62,6 @@ class LogMessage:
 def apploggerValidation():
     return True
 
+if __name__ == '__main__':
+    log_capta = LogMessage('test',)
+    log_capta.log.info('This is informational message.')
