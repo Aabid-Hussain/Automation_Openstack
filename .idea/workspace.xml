@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/ConfigDir/reading_doc.pdf" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/test.py" />
     </list>
@@ -20,8 +21,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="192">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -125,6 +126,11 @@
             <path>
               <item name="Automation_Openstack" type="b2602c69:ProjectViewProjectNode" />
               <item name="Automation_Openstack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Automation_Openstack" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Automation_Openstack" type="462c0819:PsiDirectoryNode" />
+              <item name="ConfigDir" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -599,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515042367116</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="test.py is ready to load.">
+      <created>1515042474738</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1515042474738</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -675,7 +688,8 @@
     <MESSAGE value="added environ_variabls.sh file for exporting environ variables." />
     <MESSAGE value="added scripts for VM_create.py and others." />
     <MESSAGE value="codded ssh_key pair code in VM_Create.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="codded ssh_key pair code in VM_Create.py" />
+    <MESSAGE value="test.py is ready to load." />
+    <option name="LAST_COMMIT_MESSAGE" value="test.py is ready to load." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -892,8 +906,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="192">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
