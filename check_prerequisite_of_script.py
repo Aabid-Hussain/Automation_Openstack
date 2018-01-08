@@ -4,6 +4,7 @@ import pip
 import time
 
 
+
 def better_way_of_package_check(list_of_package):
     dict_container = {}
     for item in list_of_package:
@@ -40,7 +41,7 @@ def package_uninstall(package):
 
 if __name__ == '__main__':
 
-    list_of_package = ["fabric", "select", "logging", "os", "sys", "json", "exception", "re"]
+    list_of_package = [ "select", "logging", "os", "sys", "json", "exception", "re"]
     better_way_of_package_check(list_of_package)
     package_uninstall("fabric")
 
