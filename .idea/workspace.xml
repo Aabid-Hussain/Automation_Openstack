@@ -33,9 +33,11 @@
       <file leaf-file-name="SSHAutomation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SSHAutomation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="715">
+              <caret line="177" column="21" lean-forward="false" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+              <folding>
+                <element signature="e#54#65#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -311,13 +313,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513229178367</updated>
-    </task>
-    <task id="LOCAL-00004" summary="working on SshAutomation script.">
-      <created>1513578736673</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1513578736673</updated>
     </task>
     <task id="LOCAL-00005" summary="Added function named rootcmd1 and SendCommand.">
       <created>1513584728708</created>
@@ -655,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515752866806</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Started working on SSHAutomation.py">
+      <created>1516082867790</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1516082867791</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -736,7 +738,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added function named rootcmd1 and SendCommand." />
     <MESSAGE value="Working on Ssh concepts with examples" />
     <MESSAGE value="Worked on logPrint function and ping function." />
     <MESSAGE value="Worked on load_system_host_Keys() and __doc__" />
@@ -761,7 +762,8 @@
     <MESSAGE value="95%to98% mysql understanding." />
     <MESSAGE value="practice." />
     <MESSAGE value="Working on TPM interaction with python" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on TPM interaction with python" />
+    <MESSAGE value="Started working on SSHAutomation.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on SSHAutomation.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -959,9 +961,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SSHAutomation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="715">
+          <caret line="177" column="21" lean-forward="false" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+          <folding>
+            <element signature="e#54#65#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -23,6 +23,7 @@ def ServerPingCheck(ip_add):
     response = os.system("ping -c 1 " + ip_add)
     print("\n\r")
     time.sleep(2)
+
     if response == 0:
         logPrint("ping for {} is successful".format(ip_add))
         return True
@@ -174,4 +175,4 @@ if __name__ == '__main__':
         logPrint("Connection terminated")
 
     else:
-        logPrint("Server is timeout, please fix connection issue on priority")
+        logPrint("!!!Server is timed out, please fix connection issue on priority!!!")
