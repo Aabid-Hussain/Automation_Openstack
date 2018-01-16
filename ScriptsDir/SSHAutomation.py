@@ -55,7 +55,7 @@ class SSHAutomation:
         self.client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         try:
             self.client.connect(hostname=ip_add, username=username, password=password,
-                            port=22, look_for_keys=False)
+                                port=22, look_for_keys=False)
 
         except paramiko.client.BadHostKeyException:
             logPrint("couldn't verified HostKey in server")
@@ -84,13 +84,20 @@ class SSHAutomation:
 
 
     def close_connection_host(self):
-
         '''
         -define close_connection_host(self)
         - use try & except block for capturing any exception
         - close the open connection using close method
         - assign connection attribute to None
         '''
+        if self.client:
+            try:
+                logPrint("Connection is closing for IP: {}".format(self.ip_add))
+                self.client.close()
+                self.client = None
+
+            except IOError as err:
+                logPrint(err)
 
 
     def command_required_root_privilage(self, first_command, second_command,

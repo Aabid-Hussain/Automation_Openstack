@@ -33,8 +33,8 @@
       <file leaf-file-name="SSHAutomation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SSHAutomation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="177" column="21" lean-forward="false" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+            <state relative-caret-position="187">
+              <caret line="98" column="34" lean-forward="true" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
               <folding>
                 <element signature="e#54#65#0" expanded="true" />
               </folding>
@@ -45,8 +45,8 @@
       <file leaf-file-name="SshLearning2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="93" column="11" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="93" selection-end-column="11" />
+            <state relative-caret-position="547">
+              <caret line="99" column="19" lean-forward="true" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -313,13 +313,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513229178367</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added function named rootcmd1 and SendCommand.">
-      <created>1513584728708</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1513584728708</updated>
     </task>
     <task id="LOCAL-00006" summary="Working on Ssh concepts with examples">
       <created>1513660201309</created>
@@ -657,7 +650,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516082867791</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Started working on SSHAutomation.py">
+      <created>1516082982819</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1516082982819</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -953,16 +953,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SshLearning2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="93" column="11" lean-forward="true" selection-start-line="86" selection-start-column="4" selection-end-line="93" selection-end-column="11" />
+        <state relative-caret-position="547">
+          <caret line="99" column="19" lean-forward="true" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SSHAutomation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="177" column="21" lean-forward="false" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="98" column="34" lean-forward="true" selection-start-line="98" selection-start-column="34" selection-end-line="98" selection-end-column="34" />
           <folding>
             <element signature="e#54#65#0" expanded="true" />
           </folding>
