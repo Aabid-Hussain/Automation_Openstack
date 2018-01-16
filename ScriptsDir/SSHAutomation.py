@@ -121,6 +121,30 @@ class SSHAutomation:
         - receive the data and store it in output variable
         - finally decode the output in utf-8 or ascii and print or log it.
         '''
+        shell_command_invoke = self.client.invoke_shell()
+        shell_command_invoke.send("sudo su - \n")
+        time.sleep(2)
+
+        shell_command_invoke.send(self.password + "\n")
+        time.sleep(2)
+
+        shell_command_invoke.send(first_command + "\n")
+        time.sleep(2)
+
+        shell_command_invoke.send(second_command + "\n")
+        time.sleep(2)
+
+        if set_password:
+            shell_command_invoke.send("passwd " + username + "\n")
+            shell_command_invoke.send(user_password + "\n")
+            time.sleep(0.5)
+            shell_command_invoke.send(user_password + "\n")
+
+        while not shell_command_invoke.recv_ready():
+            time.sleep(3)
+
+        output_of_shell = shell_command_invoke.recv(999999)
+        logPrint(output_of_shell.decode('ascii'))
 
 
     def command_required_user_privilage(self, command, sudo=False):

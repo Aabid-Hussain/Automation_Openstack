@@ -125,7 +125,7 @@ class SSHAutomation:
         '''
 
         invoke_shell_command = self.client.invoke_shell()
-        output_of_shell = invoke_shell_command.recv(9999)
+       #output_of_shell = invoke_shell_command.recv(9999)
 
         invoke_shell_command.send("sudo su - \n")
         time.sleep(1)
