@@ -99,6 +99,8 @@ class SSHAutomation:
             except IOError as err:
                 logPrint(err)
 
+        else:
+            logPrint("Connection is alreadty")
 
     def command_required_root_privilage(self, first_command, second_command,
                                         set_password=False, user_password='root', username='default'):

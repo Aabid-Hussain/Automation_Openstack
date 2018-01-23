@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="68a92e45-0480-4fb6-a2af-9be034b1eb2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ScriptsDir/SSHAutomation.py" afterPath="$PROJECT_DIR$/ScriptsDir/SSHAutomation.py" />
-      <change beforePath="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" afterPath="$PROJECT_DIR$/ScriptsDir/SshLearning2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,7 +32,7 @@
       <file leaf-file-name="SSHAutomation.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScriptsDir/SSHAutomation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="-543">
               <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
               <folding>
                 <element signature="e#54#65#0" expanded="true" />
@@ -314,13 +312,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513229178367</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Working on Ssh concepts with examples">
-      <created>1513660207308</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1513660207308</updated>
     </task>
     <task id="LOCAL-00008" summary="Working on Ssh concepts with examples">
       <created>1513660247305</created>
@@ -658,14 +649,20 @@
       <option name="project" value="LOCAL" />
       <updated>1516083246833</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="working on SSHAutomation.py, finishing working on command_required_root_privilage method.">
+      <created>1516084020770</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1516084020770</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="862" y="24" width="1637" height="1062" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1749528" sideWeight="0.48108107" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1749528" sideWeight="0.48108107" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JSON Utils" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976714" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3400223" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -739,7 +736,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Worked on logPrint function and ping function." />
     <MESSAGE value="Worked on load_system_host_Keys() and __doc__" />
     <MESSAGE value="                                                        Worked on load_system_host_Keys() and __doc__" />
     <MESSAGE value="designed coding logic and it's function. working on writing the code for the same." />
@@ -764,7 +760,8 @@
     <MESSAGE value="Working on TPM interaction with python" />
     <MESSAGE value="Started working on SSHAutomation.py" />
     <MESSAGE value="working on SSHAutomation.py, finishing working on close_connection method." />
-    <option name="LAST_COMMIT_MESSAGE" value="working on SSHAutomation.py, finishing working on close_connection method." />
+    <MESSAGE value="working on SSHAutomation.py, finishing working on command_required_root_privilage method." />
+    <option name="LAST_COMMIT_MESSAGE" value="working on SSHAutomation.py, finishing working on command_required_root_privilage method." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -962,7 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ScriptsDir/SSHAutomation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="-543">
           <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
           <folding>
             <element signature="e#54#65#0" expanded="true" />
